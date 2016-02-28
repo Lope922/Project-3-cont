@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication3
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -47,9 +47,11 @@
             this.button_GetInfo.TabIndex = 0;
             this.button_GetInfo.Text = "&Get Info";
             this.button_GetInfo.UseVisualStyleBackColor = true;
+            this.button_GetInfo.Click += new System.EventHandler(this.button_GetInfo_Click);
             // 
             // button_Exit
             // 
+            this.button_Exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_Exit.Location = new System.Drawing.Point(804, 530);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(79, 35);
@@ -120,10 +122,12 @@
             this.rtbHelpful_Info.TabIndex = 5;
             this.rtbHelpful_Info.Text = "";
             // 
-            // Form1
+            // Main
             // 
+            this.AcceptButton = this.button_GetInfo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button_Exit;
             this.ClientSize = new System.Drawing.Size(909, 577);
             this.Controls.Add(this.lblInfoType);
             this.Controls.Add(this.lblZip);
@@ -134,8 +138,8 @@
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.button_GetInfo);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Main";
+            this.Text = "Disater Preperation";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
