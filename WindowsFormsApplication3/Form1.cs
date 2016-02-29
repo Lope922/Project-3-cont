@@ -141,6 +141,15 @@ namespace WindowsFormsApplication3
             // if i had a status bar i would start filling it up to show user some visual progress. 
             Save_info(textBoxZip);
         }
+
+        private void buttonFlood_Click(object sender, EventArgs e)
+        {
+            lblInfoType.Text = "Flood Safety";
+        }
+
+        private void buttonSnow_Click(object sender, EventArgs e)
+        {
+            lblInfoType.Text = "Snow storm safety";}
     }
 }
 
