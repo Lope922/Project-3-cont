@@ -6,3 +6,21 @@ c:\users\cals_rig\documents\visual studio 2015\Projects\WindowsFormsApplication3
 c:\users\cals_rig\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WeatherServiceApp.csproj.GenerateResource.Cache
 c:\users\cals_rig\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
 c:\users\cals_rig\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Common.Logging.dll
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\GithubNugetDistributor.exe
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Octokit.dll
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Spring.Rest.dll
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Spring.Social.Core.dll
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Spring.Rest.pdb
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Spring.Rest.xml
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Spring.Social.Core.pdb
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\bin\Debug\Spring.Social.Core.xml
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\obj\Debug\WeatherServiceApp.csprojResolveAssemblyReference.cache
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Lope\Source\Repos\Project-3-cont\WindowsFormsApplication3\obj\Debug\WeatherServiceApp.csproj.GenerateResource.Cache
