@@ -45,7 +45,7 @@ namespace WindowsFormsApplication3
                 int their_zip = int.Parse(textBoxZip.Text);
                 
                 // write their zip to a file 
-                string path = @"C:\Users\CaLs_Rig\PycharmProjects\Project3\Program\";
+                string path = @"C:\Users\CaLs_Rig\PycharmProjects\Project3\Program\Response_info\";
                 string path_plus_filename = path + "users_zip_code.txt";
 
 // FileStream makezip = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite);
@@ -91,7 +91,7 @@ namespace WindowsFormsApplication3
             string FloodText =
                 " When this form loads it will be replaced by the python text. So this is just test text. If you are seeing this. Something is not configured right";
 
-            string path = @"C:\Users\CaLs_Rig\PycharmProjects\Project3\Program\";
+            string path = @"C:\Users\CaLs_Rig\PycharmProjects\Project3\Program\Response_info\";
 
             string fileName = path + "Floodinfo.txt";
 
@@ -127,15 +127,7 @@ namespace WindowsFormsApplication3
             {
                 MessageBox.Show(ex.Message, "IO Exception");
             }
-
-
-// add this when i put in to its own method
-//    finally
-            //          {
-            //            if (fs != null)
-            //          {
-            //            fs.Close();
-            //      }
+            
         }
 
 
