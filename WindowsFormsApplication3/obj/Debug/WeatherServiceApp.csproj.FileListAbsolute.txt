@@ -24,3 +24,4 @@ C:\Users\CaLs_Rig\Documents\Visual Studio 2015\Projects\WeatherServiceApp\Window
 C:\Users\CaLs_Rig\Documents\Visual Studio 2015\Projects\WeatherServiceApp\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
 C:\Users\CaLs_Rig\Documents\Visual Studio 2015\Projects\WeatherServiceApp\WindowsFormsApplication3\obj\Debug\WeatherServiceApp.csproj.GenerateResource.Cache
 C:\Users\CaLs_Rig\Documents\Visual Studio 2015\Projects\WeatherServiceApp\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Main.resources
+C:\Users\CaLs_Rig\Documents\Visual Studio 2015\Projects\WeatherServiceApp\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.frmZipResponseList.resources

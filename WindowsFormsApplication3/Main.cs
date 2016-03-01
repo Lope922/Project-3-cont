@@ -87,21 +87,25 @@ namespace WindowsFormsApplication3
         // Form load Events 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //when this form loads read the data from python into the rich text box. 
-            string FloodText =
-                " When this form loads it will be replaced by the python text. So this is just test text. If you are seeing this. Something is not configured right";
-
-            string path = @"C:\Users\CaLs_Rig\PycharmProjects\Project3\Program\Response_info\";
-
-            string fileName = path + "Floodinfo.txt";
 
             try
             {
+
+                //when this form loads read the data from python into the rich text box. 
+                string NatWS_info =
+                    " When this form loads it will be replaced by the python text. So this is just test text. If you are seeing this. Something is not configured right";
+
+                string path = @"C:\Users\CaLs_Rig\PycharmProjects\Project3\Program\Response_info\";
+                //todo validate the path exists
+                string fileName = path + "Badweatherinfo.txt";
+                //trying out zoom factor
+                rtbHelpful_Info.ZoomFactor = 2.0f;
                 // try to open the file that was creating using python companion app 
                 FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-                StreamReader flood_nfo_from_stream = new StreamReader(fs);
-                var test_found = flood_nfo_from_stream.ReadToEnd();
+                StreamReader weather_nfo_from_stream = new StreamReader(fs);
+                var test_found = weather_nfo_from_stream.ReadToEnd();
 
+                //todo fix bug when program repeatedly runs it write to file adding onto description each time
                 rtbHelpful_Info.Text = test_found;
                 // todo try this if current method doesn't work 
                 // renamed richtextbox to trb rtbHelpful_Info
@@ -110,36 +114,50 @@ namespace WindowsFormsApplication3
 
                 // todo limit the amount of numbers that can be keyed in for zip code to 5
                 textBoxZip.MaxLength = 5;
-
-
             }
 
-            catch (FileNotFoundException)
+
+
+            catch (FileNotFoundException fnfex)
             {
-                MessageBox.Show(fileName + " not found.", "File Not Found");
+                MessageBox.Show( fnfex.Message + " not found.", "File Not Found");
 
             }
-            catch (DirectoryNotFoundException)
+            catch (DirectoryNotFoundException dirnf)
             {
-                MessageBox.Show(path + " not found ", "Directory not Found");
+                MessageBox.Show( dirnf.Message + " not found ", "Directory not Found");
             }
             catch (IOException ex)
             {
                 MessageBox.Show(ex.Message, "IO Exception");
             }
-            
+
         }
 
 
         // this button click tells the system to go ahead and save the user input to request information for that zip code radius
         private void button_GetInfo_Click(object sender, EventArgs e)
         {
+
+            if (textBoxZip.Text == "")
+            {
+                MessageBox.Show("Enter a valid zip");
+                textBoxZip.Focus();
+                lblZip.ForeColor.Name.Equals("red");
+            }
+            
             // first save the info to a file for python to read 
             MessageBox.Show("Sending request please wait...");
 
+            // todo setup a timer to mock waiting for a response to read file, then attempt to read the file
 
             // if i had a status bar i would start filling it up to show user some visual progress. 
             Save_info(textBoxZip);
+
+            //show next text window
+            frmZipResponseList wow_factor = new frmZipResponseList();
+            wow_factor.ShowDialog();
+
         }
 
         private void buttonFlood_Click(object sender, EventArgs e)
@@ -153,3 +171,4 @@ namespace WindowsFormsApplication3
     }
 }
 
+//todo write a reset form method to reset main form after return from 2nd screen. 
