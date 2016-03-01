@@ -156,6 +156,7 @@ namespace WindowsFormsApplication3
 
             //show next text window
             frmZipResponseList wow_factor = new frmZipResponseList();
+
             wow_factor.ShowDialog();
 
         }
